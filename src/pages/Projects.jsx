@@ -23,7 +23,6 @@ export default function Projects() {
       <section className="section" style={{ paddingTop: '140px' }}>
         <div className="container">
           <div className="section-header">
-            <span className="section-tag">{'// portfolio'}</span>
             <h2 className="section-title">Featured <span className="gradient-text">Projects</span></h2>
             <p className="section-desc">Here's a glimpse of the 25+ projects we've successfully delivered. Each one built with care, tested thoroughly, and delivered on time.</p>
           </div>

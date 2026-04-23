@@ -27,7 +27,6 @@ export default function Services() {
       <section className="section services-section" style={{ paddingTop: '140px' }}>
         <div className="container">
           <div className="section-header">
-            <span className="section-tag">{'// services'}</span>
             <h2 className="section-title">What We <span className="gradient-text">Deliver</span></h2>
             <p className="section-desc">From full-stack web apps to research reports — we cover the entire spectrum of IT & Software Engineering coursework.</p>
           </div>

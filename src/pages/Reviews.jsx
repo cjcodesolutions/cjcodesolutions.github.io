@@ -94,7 +94,6 @@ export default function Reviews() {
       <section className="section feedback-section" style={{ paddingTop: '140px' }}>
         <div className="container">
           <div className="section-header">
-            <span className="section-tag">{'// reviews'}</span>
             <h2 className="section-title">Client <span className="gradient-text">Feedback</span></h2>
             <p className="section-desc">Hear from students who've used our services. Your feedback helps us grow!</p>
           </div>
