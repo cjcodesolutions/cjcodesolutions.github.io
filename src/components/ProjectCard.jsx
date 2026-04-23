@@ -17,6 +17,12 @@ const iconMap = {
   cart: (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
   ),
+  map: (
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21 3 6"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+  ),
+  activity: (
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+  ),
 };
 
 export default function ProjectCard({ project }) {
@@ -24,9 +30,13 @@ export default function ProjectCard({ project }) {
     <article className="project-card" data-category={project.category}>
       <div className="project-card-inner">
         <div className="project-image">
-          <div className="project-image-placeholder" style={{ '--accent': project.accent }}>
-            {iconMap[project.icon] || iconMap.search}
-          </div>
+          {project.image ? (
+            <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          ) : (
+            <div className="project-image-placeholder" style={{ '--accent': project.accent }}>
+              {iconMap[project.icon] || iconMap.search}
+            </div>
+          )}
         </div>
         <div className="project-info">
           <div className="project-tags">
