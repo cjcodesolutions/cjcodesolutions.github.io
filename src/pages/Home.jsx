@@ -70,7 +70,7 @@ export default function Home() {
             <div className="hero-stat-divider"></div>
             <StatCounter target={40} suffix="+" label="Assignments" animate={statsCounted} />
             <div className="hero-stat-divider"></div>
-            <StatCounter target={1} suffix="+" label="Year Exp" animate={statsCounted} />
+            <StatCounter target={2} suffix="+" label="Year Exp" animate={statsCounted} />
           </div>
         </div>
         <div className="hero-scroll-indicator">
