@@ -52,7 +52,7 @@ export default function Home() {
             <span className="hero-line hero-gradient">We've Got You Covered.</span>
           </h1>
           <p className="hero-subtitle">
-            With <strong>1+ year</strong> of experience, <strong>25+ projects</strong>, and <strong>40+ assignments</strong> completed,
+            With <strong>2+ year</strong> of experience, <strong>25+ projects</strong>, and <strong>40+ assignments</strong> completed,
             our undergraduate team delivers clean, reliable IT & software engineering work — without the stress.
           </p>
           <div className="hero-actions">
