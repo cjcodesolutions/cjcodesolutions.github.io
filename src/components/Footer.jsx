@@ -24,7 +24,6 @@ export default function Footer() {
               <a href="https://wa.me/94779446684" target="_blank" rel="noopener noreferrer">WhatsApp</a>
               <a href="mailto:cjcodesolutions@gmail.com">Email</a>
               <a href="https://www.fiverr.com/s/7YeYXKL" target="_blank" rel="noopener noreferrer">Fiverr</a>
-              <a href="https://github.com/cjcodesolutions" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>
