@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_API_URL: "https://cjcodesolutions-github-io-git-main-cjc-ode-solutions.vercel.app"
+          VITE_API_URL: "https://cjcodesolutions.vercel.app"
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
