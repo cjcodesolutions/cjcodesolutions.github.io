@@ -1375,24 +1375,17 @@ img {
 
 .contact-card {
     position: relative;
-    background: linear-gradient(135deg, rgba(220, 38, 38, 0.08), rgba(239, 68, 68, 0.04));
-    border: 1px solid rgba(220, 38, 38, 0.15);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-subtle);
     border-radius: 24px;
     padding: 80px;
     text-align: center;
     overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .contact-glow {
-    position: absolute;
-    top: -200px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(220, 38, 38, 0.15), transparent);
-    filter: blur(80px);
-    pointer-events: none;
+    display: none;
 }
 
 .contact-content {
@@ -1423,7 +1416,7 @@ img {
 }
 
 .contact-method-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--card-radius);
     padding: 28px 24px;
@@ -1436,9 +1429,9 @@ img {
 }
 
 .contact-method-card:hover {
-    border-color: var(--border-hover);
+    border-color: var(--accent-mid);
     transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-secondary);
 }
 
 .contact-method-icon {
