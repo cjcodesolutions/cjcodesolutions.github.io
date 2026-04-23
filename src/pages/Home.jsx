@@ -52,7 +52,7 @@ export default function Home() {
             <span className="hero-line hero-gradient">We've Got You Covered.</span>
           </h1>
           <p className="hero-subtitle">
-            With <strong>1+ year</strong> of experience and <strong>25+ completed projects</strong>,
+            With <strong>1+ year</strong> of experience, <strong>25+ projects</strong>, and <strong>40+ assignments</strong> completed,
             our undergraduate team delivers clean, reliable IT & software engineering work — without the stress.
           </p>
           <div className="hero-actions">
@@ -70,11 +70,11 @@ export default function Home() {
             </a>
           </div>
           <div className="hero-stats-row" ref={statsRef}>
-            <StatCounter target={25} suffix="+" label="Projects Done" animate={statsCounted} />
+            <StatCounter target={25} suffix="+" label="Projects" animate={statsCounted} />
             <div className="hero-stat-divider"></div>
-            <StatCounter target={1} suffix="+" label="Year Experience" animate={statsCounted} />
+            <StatCounter target={40} suffix="+" label="Assignments" animate={statsCounted} />
             <div className="hero-stat-divider"></div>
-            <StatCounter target={100} suffix="%" label="On-Time Delivery" animate={statsCounted} />
+            <StatCounter target={1} suffix="+" label="Year Exp" animate={statsCounted} />
           </div>
         </div>
         <div className="hero-scroll-indicator">
