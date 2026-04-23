@@ -30,7 +30,6 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <p>&copy; 2025 CJ Code Solutions. All rights reserved.</p>
-          <p className="footer-tagline">Built with ❤️ by students, for students.</p>
         </div>
       </div>
     </footer>
