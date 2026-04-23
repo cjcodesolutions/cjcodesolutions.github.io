@@ -25,9 +25,11 @@
     --accent-coral: #ff6b6b;
     --accent-green: #34d399;
     --accent-amber: #fbbf24;
+    --accent-blue: #3b82f6; 
+    --accent-violet: #8b5cf6;
 
     --gradient-primary: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-    --gradient-hero: linear-gradient(135deg, #dc2626 0%, #ef4444 40%, #ff6b6b 100%);
+    --gradient-hero: linear-gradient(135deg, #dc2626 0%, #ef4444 40%, #fbbf24 100%);
     --gradient-glow: radial-gradient(circle, rgba(220, 38, 38, 0.15) 0%, transparent 70%);
 
     /* Typography */
@@ -413,6 +415,18 @@ img {
     position: relative;
     overflow: hidden;
     padding: 120px 24px 80px;
+    background-image: url('/background_banner.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.85);
+    z-index: 0;
 }
 
 .hero-bg-effects {
@@ -451,7 +465,7 @@ img {
 .hero-glow-2 {
     width: 500px;
     height: 500px;
-    background: rgba(239, 68, 68, 0.08);
+    background: rgba(59, 130, 246, 0.08); /* Blue glow to complement red */
     bottom: -10%;
     left: -5%;
     animation: float 10s ease-in-out infinite reverse;
@@ -1060,6 +1074,8 @@ img {
     padding: 32px;
     flex-shrink: 0;
     transition: all 0.4s var(--ease-out);
+    display: flex;
+    flex-direction: column;
 }
 
 .review-card:hover {
@@ -1084,6 +1100,7 @@ img {
     line-height: 1.7;
     margin-bottom: 20px;
     font-style: italic;
+    flex-grow: 1;
 }
 
 .review-author {

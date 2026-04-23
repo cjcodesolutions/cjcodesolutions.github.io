@@ -1,11 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { defaultReviews } from '../data/defaultReviews';
 import { fetchReviews, submitReview } from '../api/feedback';
 import ReviewCard from '../components/ReviewCard';
 import StarRating from '../components/StarRating';
 
 export default function Reviews() {
-  const [reviews, setReviews] = useState(defaultReviews);
+  const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedRating, setSelectedRating] = useState(0);
@@ -14,20 +13,12 @@ export default function Reviews() {
   const trackRef = useRef(null);
   const autoSlideRef = useRef(null);
 
-  // Load reviews
+  // Load reviews from MongoDB
   useEffect(() => {
     async function load() {
       const apiReviews = await fetchReviews();
       if (apiReviews && apiReviews.length > 0) {
         setReviews(apiReviews);
-      } else {
-        // Check localStorage for additional reviews
-        const stored = localStorage.getItem('cj_reviews');
-        if (stored) {
-          const localReviews = JSON.parse(stored);
-          const merged = [...defaultReviews, ...localReviews];
-          setReviews(merged);
-        }
       }
       setLoading(false);
     }
@@ -110,6 +101,11 @@ export default function Reviews() {
 
           {loading ? (
             <div className="loading-spinner"><div className="spinner"></div></div>
+          ) : reviews.length === 0 ? (
+            <div className="reviews-empty" style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+              <h3>No reviews yet!</h3>
+              <p>Be the first to share your experience with us.</p>
+            </div>
           ) : (
             <div
               className="reviews-carousel"

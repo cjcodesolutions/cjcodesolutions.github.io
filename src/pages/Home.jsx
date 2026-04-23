@@ -32,6 +32,17 @@ export default function Home() {
           <div className="floating-code floating-code-4">{'// no bugs here 🚀'}</div>
         </div>
         <div className="hero-content">
+          <img 
+            src="/logo.png" 
+            alt="CJ Code Solutions Logo" 
+            style={{ 
+              height: '90px', 
+              margin: '0 auto 24px', 
+              display: 'block', 
+              animation: 'pulse 3s infinite',
+              filter: 'drop-shadow(0 0 20px rgba(220, 38, 38, 0.4))'
+            }} 
+          />
           <div className="hero-badge">
             <span className="badge-dot"></span>
             Available for assignments
