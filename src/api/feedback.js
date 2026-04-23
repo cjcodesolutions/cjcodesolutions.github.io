@@ -1,9 +1,11 @@
 const API_BASE = import.meta.env.VITE_API_URL || '';
+const REVIEWS_ENDPOINT = API_BASE
+  ? `${API_BASE.replace(/\/$/, '')}/api/reviews`
+  : '/api/reviews';
 
 export async function fetchReviews() {
-  if (!API_BASE) return null;
   try {
-    const res = await fetch(`${API_BASE}/api/reviews`);
+    const res = await fetch(REVIEWS_ENDPOINT);
     if (!res.ok) throw new Error('Failed to fetch');
     return await res.json();
   } catch (err) {
@@ -13,16 +15,8 @@ export async function fetchReviews() {
 }
 
 export async function submitReview(review) {
-  if (!API_BASE) {
-    // Fallback: save to localStorage
-    const stored = localStorage.getItem('cj_reviews');
-    const reviews = stored ? JSON.parse(stored) : [];
-    reviews.push(review);
-    localStorage.setItem('cj_reviews', JSON.stringify(reviews));
-    return { success: true, local: true };
-  }
   try {
-    const res = await fetch(`${API_BASE}/api/reviews`, {
+    const res = await fetch(REVIEWS_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(review),
