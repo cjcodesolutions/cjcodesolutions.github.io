@@ -45,10 +45,10 @@ export default function Home() {
           />
           <div className="hero-badge">
             <span className="badge-dot"></span>
-            Available for assignments
+            Available for Projects
           </div>
           <h1 className="hero-title">
-            <span className="hero-line">Assignments Piling Up?</span>
+            <span className="hero-line">Projects Piling Up?</span>
             <span className="hero-line hero-gradient">We've Got You Covered.</span>
           </h1>
           <p className="hero-subtitle">
@@ -83,7 +83,7 @@ export default function Home() {
       <section id="about" className="section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Your Assignment <span className="gradient-text">Lifeline</span></h2>
+            <h2 className="section-title">Your Project <span className="gradient-text">Lifeline</span></h2>
             <p className="section-desc">We're a team of undergraduate developers who've been through the same grind. We know the struggle — and we're here to help.</p>
           </div>
           <div className="about-grid">
@@ -124,7 +124,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">How It <span className="gradient-text">Works</span></h2>
-            <p className="section-desc">Getting your assignment done is simple — just 4 steps and you're stress-free.</p>
+            <p className="section-desc">Getting your projects done is simple — just 4 steps and you're stress-free.</p>
           </div>
           <div className="process-timeline">
             {[

@@ -28,7 +28,7 @@ export default function Services() {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">What We <span className="gradient-text">Deliver</span></h2>
-            <p className="section-desc">From full-stack web apps to research reports — we cover the entire spectrum of IT & Software Engineering coursework.</p>
+            <p className="section-desc">From full-stack web apps to research reports — we cover the entire spectrum of IT & Software Engineering projects.</p>
           </div>
           <div className="services-grid">
             {services.map((service) => (

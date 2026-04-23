@@ -6,7 +6,7 @@ export default function Contact() {
           <div className="contact-card">
             <div className="contact-glow"></div>
             <div className="contact-content">
-              <h2>Ready to Ace Your <span className="gradient-text">Assignment?</span></h2>
+              <h2>Ready to Ace Your <span className="gradient-text">Project?</span></h2>
               <p>Don't let deadlines stress you out. Reach out to us directly via WhatsApp or Email — we respond fast!</p>
 
               {/* Direct Contact Methods */}
